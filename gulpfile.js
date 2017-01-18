@@ -19,11 +19,9 @@ require('laravel-elixir-vue-2');
 //});
 
 elixir(function(mix) {
-    mix.sass('app.scss');
 
-    mix.rollup('app.js');
-    mix.copy('node_modules/bootstrap-sass/assets/fonts/bootstrap/','public/build/fonts/bootstrap');
-
-    mix.version(['js/app.js', 'css/app.css']);
-
+    mix.rollup('app.js')
+        .sass('app.scss')
+        .copy('node_modules/bootstrap-sass/assets/fonts/bootstrap/','public/build/fonts/bootstrap')
+        .version(['js/app.js', 'css/app.css']);
 });
