@@ -6,7 +6,7 @@ window._ = require('lodash');
  * code may be modified to fit the specific needs of your application.
  */
 
-window.$ = window.jQuery = require('jquery');
+window.$ = window.jQuery = jQuery = require('jquery');
 /**
  * First we will load all of this project's JavaScript dependencies which
  * include Vue and Vue Resource. This gives a great starting point for
